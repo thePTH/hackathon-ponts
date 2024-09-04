@@ -1,6 +1,6 @@
 :root {
   --main-body-background-color: #dadada;
-  --secondary-body-backgroung-color: #292929;
+  --secondary-body-background-color: #292929;
   --main-background-color: #f3f3f3;
   --secondary-background-color: #313131;
   --main-color: #ffffff;
@@ -22,9 +22,9 @@
 
 .dark {
   --secondary-body-background-color: #dadada;
-  --main-body-backgroung-color: #292929;
+  --main-body-background-color: #121212;
   --secondary-background-color: #f3f3f3;
-  --main-background-color: #313131;
+  --main-background-color: #202020;
   --secondary-color: #ffffff;
   --main-color: #000000;
   --secondary-gpt-answer-color: #ffe7ad;
@@ -33,7 +33,7 @@
 
 .clear {
   --main-body-background-color: #dadada;
-  --secondary-body-backgroung-color: #292929;
+  --secondary-body-background-color: #292929;
   --main-background-color: #f3f3f3;
   --secondary-background-color: #313131;
   --main-color: #ffffff;
@@ -43,13 +43,13 @@
 }
 
 .pink {
-  --main-body-background-color: #dadada;
-  --secondary-body-backgroung-color: #292929;
-  --main-background-color: #f3f3f3;
-  --secondary-background-color: #313131;
-  --main-color: #ffffff;
-  --secondary-color: #000000;
-  --main-gpt-answer-color: #ffe7ad;
+  --main-body-background-color: #8f0081;
+  --secondary-body-background-color: #ff00e6;
+  --main-background-color: #8b00cb;
+  --secondary-background-color: #4d006c;
+  --main-color: #ff005d;
+  --secondary-color: #d30094;
+  --main-gpt-answer-color: #0011ff;
   --secondary-gpt-answer-color: #ffad13;
 }
 
