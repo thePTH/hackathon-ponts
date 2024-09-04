@@ -51,9 +51,9 @@ def reponse_a_la_question():
     reponse_gpt = ask_question_to_pdf(
         "Voici une question liée au texte : '"
         + question
-        + "'.\n Voici la réponse d'un élève à la question : '"
+        + "'.\n Voici la réponse d'un élève à la question à l'aide des informations dans le texte : '"
         + reponse_user
-        + "'\n Dis moi si sa réponse est correcte, fausse ou partiellement correcte, et donne selon toi la bonne réponse avec des explications."
+        + "'\n Dis moi si sa réponse est correcte, fausse ou partiellement correcte, et donne selon toi la bonne réponse avec des explications, en utilisant pour seule connaissance les informations du texte."
     )
     return jsonify({"answer": reponse_gpt})
 
