@@ -2,6 +2,7 @@ const promptForm = document.getElementById("prompt-form");
 const submitButton = document.getElementById("submit-button");
 const questionButton = document.getElementById("question-button");
 const messagesContainer = document.getElementById("messages-container");
+const darkModeButton = document.getElementById("dark-mode-button");
 
 const appendHumanMessage = (message) => {
   const humanMessageElement = document.createElement("div");
@@ -71,3 +72,5 @@ const handleQuestionClick = async (event) => {
 };
 
 questionButton.addEventListener("click", handleQuestionClick);
+
+

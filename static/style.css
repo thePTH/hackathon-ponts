@@ -15,6 +15,26 @@
   box-sizing: border-box;
 }
 
+
+
+.dark {
+  --main-body-background-color: #dadada;
+  --secondary-body-backgroung-color: #313131;
+  --main-background-color: #b7b7b7;
+  --secondary-background-color: #373737;
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+}
+
+.clear {
+  --main-body-background-color: #dadada;
+  --secondary-body-backgroung-color: #313131;
+  --main-background-color: #b7b7b7;
+  --secondary-background-color: #373737;
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+}
+
 body {
   background-color: var(--main-body-background-color);
   padding: 0;
