@@ -12,8 +12,8 @@ text = "histoire-des-ponts\n\nL'École des Ponts et Chaussées : Pionnière de l
 
 def gpt3_completion(question):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": question}])
+        model="gpt-3.5-turbo", messages=[{"role": "user", "content": question}]
+    )
 
     return response.choices[0].message.content
 
@@ -24,30 +24,38 @@ def ask_question_to_pdf(question_to_pdf):
     return reponse
 
 
-@app.route('/')
+@app.route("/")
 def hello():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
-@app.route('/prompt', methods = ['POST'])
+@app.route("/prompt", methods=["POST"])
 def answer():
-    question = request.form['prompt']
+    question = request.form["prompt"]
     reponse = ask_question_to_pdf(question)
-    return jsonify({'answer' : reponse})
+    return jsonify({"answer": reponse})
 
 
-@app.route('/question', methods = ['GET'])
+@app.route("/question", methods=["GET"])
 def random_question():
-    random_question = ask_question_to_pdf("Pose une question de compréhension sur ce texte.")
-    return jsonify({'answer' : random_question})
+    random_question = ask_question_to_pdf(
+        "Pose une question de compréhension sur ce texte."
+    )
+    return jsonify({"answer": random_question})
 
 
-@app.route('/answer', methods = ['POST'])
+@app.route("/answer", methods=["POST"])
 def reponse_a_la_question():
-    question = request.form['question']
-    reponse_user = request.form['prompt']
-    reponse_gpt = ask_question_to_pdf("Voici une question liée au texte : '" + question + "'.\n Voici la réponse d'un élève à la question : '" + reponse_user + "'\n Dis moi si sa réponse est correcte, fausse ou partiellement correcte, et donne selon toi la bonne réponse avec des explications.")
-    return jsonify({'answer' : reponse_gpt})
+    question = request.form["question"]
+    reponse_user = request.form["prompt"]
+    reponse_gpt = ask_question_to_pdf(
+        "Voici une question liée au texte : '"
+        + question
+        + "'.\n Voici la réponse d'un élève à la question : '"
+        + reponse_user
+        + "'\n Dis moi si sa réponse est correcte, fausse ou partiellement correcte, et donne selon toi la bonne réponse avec des explications."
+    )
+    return jsonify({"answer": reponse_gpt})
 
 
 if __name__ == "__main__":
