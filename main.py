@@ -29,8 +29,8 @@ def answer():
     question = request.form['prompt']
     reponse = ask_question_to_pdf(question)
     return jsonify({'answer' : reponse})
-@app.route('/question', methods = ['GET'])
 
+@app.route('/question', methods = ['GET'])
 def random_question():
     random_question = ask_question_to_pdf("Pose une question de compréhension sur ce texte.")
     return jsonify({'answer' : random_question})
