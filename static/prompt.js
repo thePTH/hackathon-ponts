@@ -3,6 +3,8 @@ const submitButton = document.getElementById("submit-button");
 const questionButton = document.getElementById("question-button");
 const messagesContainer = document.getElementById("messages-container");
 const darkModeButton = document.getElementById("dark-mode-button");
+const pinkModeButton = document.getElementById("pink-mode-button");
+const clearModeButton = document.getElementById("clear-mode-button");
 const body = document.querySelector("body")
 
 
@@ -78,13 +80,18 @@ questionButton.addEventListener("click", handleQuestionClick);
 
 
 const switchDarkMode = async (event) => {
-
-
-
   body.classList.add("dark")
-  isDarkMode = true
-
-
 }
-
 darkModeButton.addEventListener("click", switchDarkMode)
+
+
+
+const switchPinkMode = async (event) => {
+  body.classList.add("pink")
+}
+pinkModeButton.addEventListener("click", switchClearMode)
+
+const switchClearMode = async (event) => {
+  body.classList.add("clear")
+}
+clearModeButton.addEventListener("click", switchClearMode)
