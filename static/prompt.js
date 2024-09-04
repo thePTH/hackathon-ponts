@@ -80,6 +80,15 @@ questionButton.addEventListener("click", handleQuestionClick);
 
 
 const switchDarkMode = async (event) => {
+
+  if (body.classList.contains("clear")) {
+    body.classList.remove("clear")
+  }
+
+  if (body.classList.contains("pink")) {
+    body.classList.remove("pink")
+  }
+
   body.classList.add("dark")
 }
 darkModeButton.addEventListener("click", switchDarkMode)
@@ -87,11 +96,27 @@ darkModeButton.addEventListener("click", switchDarkMode)
 
 
 const switchPinkMode = async (event) => {
+  if (body.classList.contains("clear")) {
+    body.classList.remove("clear")
+  }
+
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark")
+  }
+
   body.classList.add("pink")
 }
-pinkModeButton.addEventListener("click", switchClearMode)
+pinkModeButton.addEventListener("click", switchPinkMode)
 
 const switchClearMode = async (event) => {
+  if (body.classList.contains("pink")) {
+    body.classList.remove("pink")
+  }
+
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark")
+  }
+
   body.classList.add("clear")
 }
 clearModeButton.addEventListener("click", switchClearMode)
