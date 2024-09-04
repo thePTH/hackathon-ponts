@@ -82,12 +82,12 @@ body {
   border: 1px solid var(--border-color);
   padding: 5px;
   border-radius: 5px;
-  background-color: var(--main-color);
+  background-color: var(--body-background-color);
 }
 
 .button:hover,
 .button:active {
-  background-color: var(--body-background-color);
+  background-color: var(--main-color);
   cursor: pointer;
 }
 
