@@ -1,10 +1,13 @@
 :root {
-  --body-background-color: #2d2d2d;
-  --main-background-color: #232323;
+  --main-body-background-color: #dadada;
+  --secondary-body-backgroung-color: #313131;
+  --main-background-color: #b7b7b7;
+  --secondary-background-color: #373737;
   --main-color: #ffffff;
+  --secondary-color: #000000;
   --max-body-width: 700px;
-  --border-color: #cccccc;
-  --secondary-color: #747060;
+  --border-color: #7c7c7c;
+
   --loader-bullet-size: 6px;
 }
 
@@ -13,7 +16,7 @@
 }
 
 body {
-  background-color: var(--body-background-color);
+  background-color: var(--main-body-background-color);
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -82,7 +85,8 @@ body {
   border: 1px solid var(--border-color);
   padding: 5px;
   border-radius: 5px;
-  background-color: var(--body-background-color);
+  background-color: var(--main-body-background-color);
+
 }
 
 .button:hover,
