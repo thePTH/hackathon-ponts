@@ -42,6 +42,18 @@
   --secondary-gpt-answer-color: #f7c059;
 }
 
+.pink {
+  --main-body-background-color: #dadada;
+  --secondary-body-backgroung-color: #292929;
+  --main-background-color: #f3f3f3;
+  --secondary-background-color: #313131;
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --main-gpt-answer-color: #846224;
+  --secondary-gpt-answer-color: #f7c059;
+}
+
+
 body {
   background-color: var(--main-body-background-color);
   padding: 0;

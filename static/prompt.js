@@ -5,7 +5,7 @@ const messagesContainer = document.getElementById("messages-container");
 const darkModeButton = document.getElementById("dark-mode-button");
 const body = document.querySelector("body")
 
-var isDarkMode = false
+
 
 const appendHumanMessage = (message) => {
   const humanMessageElement = document.createElement("div");
@@ -78,17 +78,12 @@ questionButton.addEventListener("click", handleQuestionClick);
 
 
 const switchDarkMode = async (event) => {
-  if (isDarkMode) {
-    body.classList.add("clear")
 
 
-    isDarkMode = false
-  } else {
 
+  body.classList.add("dark")
+  isDarkMode = true
 
-    body.classList.add("dark")
-    isDarkMode = true
-  }
 
 }
 
