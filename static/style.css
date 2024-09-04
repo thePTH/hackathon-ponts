@@ -1,12 +1,15 @@
 :root {
   --main-body-background-color: #dadada;
-  --secondary-body-backgroung-color: #313131;
-  --main-background-color: #b7b7b7;
-  --secondary-background-color: #373737;
+  --secondary-body-backgroung-color: #292929;
+  --main-background-color: #f3f3f3;
+  --secondary-background-color: #313131;
   --main-color: #ffffff;
   --secondary-color: #000000;
+  --main-gpt-answer-color: #846224;
+  --secondary-gpt-answer-color: #f7c059;
   --max-body-width: 700px;
   --border-color: #7c7c7c;
+
 
   --loader-bullet-size: 6px;
 }
@@ -18,21 +21,25 @@
 
 
 .dark {
-  --main-body-background-color: #dadada;
-  --secondary-body-backgroung-color: #313131;
-  --main-background-color: #b7b7b7;
-  --secondary-background-color: #373737;
-  --main-color: #ffffff;
-  --secondary-color: #000000;
+  --secondary-body-background-color: #dadada;
+  --main-body-backgroung-color: #292929;
+  --secondary-background-color: #f3f3f3;
+  --main-background-color: #313131;
+  --secondary-color: #ffffff;
+  --main-color: #000000;
+  --secondary-gpt-answer-color: #846224;
+  --main-gpt-answer-color: #f7c059;
 }
 
 .clear {
   --main-body-background-color: #dadada;
-  --secondary-body-backgroung-color: #313131;
-  --main-background-color: #b7b7b7;
-  --secondary-background-color: #373737;
+  --secondary-body-backgroung-color: #292929;
+  --main-background-color: #f3f3f3;
+  --secondary-background-color: #313131;
   --main-color: #ffffff;
   --secondary-color: #000000;
+  --main-gpt-answer-color: #846224;
+  --secondary-gpt-answer-color: #f7c059;
 }
 
 body {
@@ -53,10 +60,12 @@ body {
 
 .header {
   text-align: left;
+  color: var(--secondary-color)
 }
 
 .header-title {
   margin-top: 0;
+  color: var(--secondary-color)
 }
 
 .messages-container {
@@ -70,10 +79,11 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 10px 15px;
+  background-color: var(--main-gpt-answer-color)
 }
 
 .message-human {
-  background-color: var(--secondary-color);
+  background-color: var(--main-body-background-color);
 }
 
 .prompt-container {
@@ -92,6 +102,7 @@ body {
 
 .prompt-label {
   font-weight: bold;
+  color: var(--secondary-color)
 }
 
 .prompt-input {
