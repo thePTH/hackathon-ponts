@@ -24,7 +24,7 @@
   --secondary-body-background-color: #dadada;
   --main-body-background-color: #121212;
   --secondary-background-color: #f3f3f3;
-  --main-background-color: #202020;
+  --main-background-color: #313131;
   --secondary-color: #ffffff;
   --main-color: #000000;
   --secondary-gpt-answer-color: #ffe7ad;
@@ -92,12 +92,12 @@ body {
   border-radius: 5px;
   padding: 10px 15px;
   background-color: var(--main-gpt-answer-color);
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 .message-human {
   background-color: var(--main-body-background-color);
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 .prompt-container {
@@ -131,6 +131,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   background-color: var(--main-body-background-color);
+  color: var(--secondary-color);
 
 }
 
