@@ -12,7 +12,7 @@ def gpt3_completion(question):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": question}])
-    
+
     return response.choices[0].message.content
 
 def ask_question_to_pdf(question_to_pdf):
