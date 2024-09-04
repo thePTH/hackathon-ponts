@@ -91,3 +91,5 @@ const switchDarkMode = async (event) => {
   }
 
 }
+
+darkModeButton.addEventListener("click", switchDarkMode)
