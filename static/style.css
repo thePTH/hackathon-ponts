@@ -22,9 +22,9 @@
 
 .dark {
   --secondary-body-background-color: #dadada;
-  --main-body-background-color: #121212;
+  --main-background-color: #121212;
   --secondary-background-color: #f3f3f3;
-  --main-background-color: #313131;
+  --main-body-background-color: #313131;
   --secondary-color: #ffffff;
   --main-color: #000000;
   --secondary-gpt-answer-color: #ffe7ad;
@@ -43,13 +43,13 @@
 }
 
 .pink {
-  --main-body-background-color: #8f0081;
+  --main-body-background-color: #ff00e6;
   --secondary-body-background-color: #ff00e6;
-  --main-background-color: #8b00cb;
+  --main-background-color: #c800cb;
   --secondary-background-color: #4d006c;
   --main-color: #ff005d;
-  --secondary-color: #d30094;
-  --main-gpt-answer-color: #0011ff;
+  --secondary-color: #000000;
+  --main-gpt-answer-color: #a200ff;
   --secondary-gpt-answer-color: #ffad13;
 }
 
